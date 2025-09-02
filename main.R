@@ -96,12 +96,6 @@ GGally::ggpairs(
   title = "Pairwise Relationships between Depression, Race, and Gender"
 )
 
-#Look at key variable relationships first.
-#Focus on the main covariates related to your main research question.
-#You don't need to exhaustively explore every single variable at this stage.
-#(We'll handle complexities through model building.)
-
-
 
 # State by state OLS - highlgihts we'll need to weight by sample size -----
 ggplot(data, aes(x = Crude.Prevalence.Estimate, y = per_gop)) +
