@@ -46,7 +46,7 @@ This project examines whether higher depression rates in U.S. counties are assoc
 ├── data/
 │   └── data.csv             # County-level dataset
 ├── results/
-│   ├── figures/             # Generated visualizations
+│   ├── figures/             # Generated visualisations
 │   └── models/              # Saved model objects
 ├── README.md
 └── requirements.txt         # R package dependencies
@@ -60,7 +60,7 @@ This project examines whether higher depression rates in U.S. counties are assoc
 # Install required packages
 install.packages(c(
   "brms",        # Bayesian regression models
-  "ggplot2",     # Data visualization
+  "ggplot2",     # Data visualisation
   "dplyr",       # Data manipulation
   "readr",       # Data import
   "bayesplot",   # MCMC diagnostics
@@ -87,14 +87,14 @@ install.packages(c(
 
 3. **Key outputs will include**:
    - Model comparison statistics
-   - State-specific effect visualizations
+   - State-specific effect visualisations
    - Posterior predictive checks
    - Diagnostic plots
 
-## 📈 Key Visualizations
+## 📈 Key Visualisations
 
 ### State-Specific Depression Effects
-Our central finding visualizes how the depression-voting relationship varies by state:
+Our central finding visualises how the depression-voting relationship varies by state:
 
 - **Positive effects**: States like Texas show stronger associations between depression and Republican support
 - **Negative effects**: States like New York show opposite or negligible relationships
@@ -132,7 +132,7 @@ The full hierarchical model significantly outperforms simpler alternatives.
 
 ### Advanced Features
 - **Population weighting**: `sigma ~ scale(log(TOT_POP))` accounts for county size differences
-- **Convergence optimization**: `adapt_delta = 0.95` ensures stable sampling
+- **Convergence optimisation**: `adapt_delta = 0.95` ensures stable sampling
 - **Comprehensive diagnostics**: Multiple posterior predictive checks validate model assumptions
 
 ### Computational Details
@@ -156,7 +156,7 @@ The full hierarchical model significantly outperforms simpler alternatives.
 
 ### Core Packages
 - `brms` (≥2.19.0) - Bayesian modeling
-- `ggplot2` (≥3.4.0) - Visualization
+- `ggplot2` (≥3.4.0) - Visualisation
 - `dplyr` (≥1.1.0) - Data manipulation
 - `rstan` (≥2.26.0) - Stan interface
 
